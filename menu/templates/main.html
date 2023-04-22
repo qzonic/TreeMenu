@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Tree Menu</title>
+    <link rel="stylesheet" href='{% static "css/main.css" %}'>
+</head>
+<body>
+
+{% load tree %}
+
+<nav>{% draw_menu 'main' %}</nav>
+
+{{result}}
+
+<h1>{{name}}</h1>
+
+
+</body>
+</html>
