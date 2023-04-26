@@ -36,8 +36,8 @@ nav ul {
   letter-spacing: 2px;
   color: #1c1c1c;
 }
-.topmenu, .topmenu > li > a:hover, .submenu li a:hover {color: #ddbe86;}
-.topmenu .active {color: #4682B4}
+.topmenu > li > a:hover, .submenu li a:hover {color: #ddbe86;}
+.topmenu .active{color: #00c5ff}
 .submenu {
   position: absolute;
   left: -1px;
@@ -68,7 +68,7 @@ nav ul {
   left: -webkit-calc(100% - 1px);
 }
 nav li:hover > .submenu {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0px);
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
 }

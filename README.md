@@ -30,44 +30,25 @@ source venv/bin/activate
 
 *Установить зависимости из файла requirements.txt:*
 ```
-python -m pip install --upgrade pip
+pip install --upgrade pip
 ```
 
 ```
 pip install -r requirements.txt
 ```
 
-*Пейрейти в директорию с файлом settings.py и создайте там файл .env:*
+*Перейдите в директорию с фалом manage.py и выполните миграции:*
 ```
-cd menu/menu/
-```
-* Windows
-```
-NUL > .env
-```
-* Linux/MacOS.
-```
-touch .env
+cd menu/
 ```
 
-*Откройте файл .env:*
-```
-nano .env
-```
-*Создайте там переменную SECRET_KEY:*
-```
-SECRET_KEY='ваш секретный ключ'
-```
-*Нажмите сначала сочетание клавиш Ctrl+O и нажмите клавишу Enter, а затем Ctrl+X*
-
-*Вернитесь в директорию с файлом "manage.py":*
-```
-cd ..
-```
-
-*Выполнить миграции:*
 ```
 python manage.py migrate
+```
+
+*Выполните загрузку тестовых данных из json в базу даных:*
+```
+python manage.py loaddata main.json
 ```
 
 *Создать супер пользователя*
@@ -99,4 +80,4 @@ python manage.py runserver
 
 * MenuItem - модель элементов меню
 
-В модели "MenuItem" элемент должен ссылаться на родителя, корневые элементы не на кого не ссылаются.
+В модели "MenuItem" элемент должен ссылаться на родителя, корневые элементы ни на кого не ссылаются.

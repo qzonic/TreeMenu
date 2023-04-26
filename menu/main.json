@@ -1,0 +1,150 @@
+[
+{
+  "model": "main.menu",
+  "pk": 1,
+  "fields": {
+    "name": "main",
+    "slug": "main"
+  }
+},
+{
+  "model": "main.menuitem",
+  "pk": 11,
+  "fields": {
+    "name": "Техника",
+    "menu": 1,
+    "parent": null,
+    "slug": "tech"
+  }
+},
+{
+  "model": "main.menuitem",
+  "pk": 12,
+  "fields": {
+    "name": "Одежда",
+    "menu": 1,
+    "parent": null,
+    "slug": "cloth"
+  }
+},
+{
+  "model": "main.menuitem",
+  "pk": 13,
+  "fields": {
+    "name": "Другое",
+    "menu": 1,
+    "parent": null,
+    "slug": "other"
+  }
+},
+{
+  "model": "main.menuitem",
+  "pk": 14,
+  "fields": {
+    "name": "Телефоны",
+    "menu": 1,
+    "parent": 11,
+    "slug": "phones"
+  }
+},
+{
+  "model": "main.menuitem",
+  "pk": 16,
+  "fields": {
+    "name": "Мужская",
+    "menu": 1,
+    "parent": 12,
+    "slug": "man"
+  }
+},
+{
+  "model": "main.menuitem",
+  "pk": 17,
+  "fields": {
+    "name": "Женская",
+    "menu": 1,
+    "parent": 12,
+    "slug": "women"
+  }
+},
+{
+  "model": "main.menuitem",
+  "pk": 25,
+  "fields": {
+    "name": "iPhone",
+    "menu": 1,
+    "parent": 14,
+    "slug": "iPhone"
+  }
+},
+{
+  "model": "main.menuitem",
+  "pk": 26,
+  "fields": {
+    "name": "Samsung",
+    "menu": 1,
+    "parent": 14,
+    "slug": "samsung"
+  }
+},
+{
+  "model": "main.menuitem",
+  "pk": 27,
+  "fields": {
+    "name": "Телевизор",
+    "menu": 1,
+    "parent": 11,
+    "slug": "tv"
+  }
+},
+{
+  "model": "main.menuitem",
+  "pk": 28,
+  "fields": {
+    "name": "Sony",
+    "menu": 1,
+    "parent": 27,
+    "slug": "sony"
+  }
+},
+{
+  "model": "main.menuitem",
+  "pk": 29,
+  "fields": {
+    "name": "Xiaomi",
+    "menu": 1,
+    "parent": 27,
+    "slug": "xiaomi"
+  }
+},
+{
+  "model": "main.menuitem",
+  "pk": 30,
+  "fields": {
+    "name": "Зимняя",
+    "menu": 1,
+    "parent": 16,
+    "slug": "winter"
+  }
+},
+{
+  "model": "main.menuitem",
+  "pk": 31,
+  "fields": {
+    "name": "Летняя",
+    "menu": 1,
+    "parent": 17,
+    "slug": "summer"
+  }
+},
+{
+  "model": "main.menuitem",
+  "pk": 32,
+  "fields": {
+    "name": "Товары для дома",
+    "menu": 1,
+    "parent": 13,
+    "slug": "home"
+  }
+}
+]

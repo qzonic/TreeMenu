@@ -1,0 +1,18 @@
+{% load tree %}
+
+{% for item in tree %}
+    {% if forloop.first %}
+        <ul class="{% if item.branch.parent %}submenu{% else %}topmenu{% endif %}">
+    {% endif %}
+            <li>
+                <a href="{% url 'main-slug' item.branch.slug %}" {% if  item.branch.slug in active_path%}class="active"{% endif %}>{{ item.branch.name }}</a>
+                {% if item.children %}
+                    {% include 'menu.html' with tree=item.children %}
+                {% endif %}
+            </li>
+    {% if forloop.last %}
+        </ul>
+    {% endif %}
+{% endfor %}
+
+
